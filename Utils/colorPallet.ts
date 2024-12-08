@@ -1,0 +1,8 @@
+export enum COLOR_PALETTE {
+    FIRST_PURPLE = "#624E88",
+    SECOND_PURPLE = "#8967B3",
+    FIRT_PINK = "#CB80AB",
+    FIRT_YELLOW = "#E6D9A2",
+    FIRST_WHITE = "#FBF8EF",
+    WHITE = "white"
+}
