@@ -16,7 +16,6 @@ export default function Index() {
   useEffect(() => {
     if (Object.values(selectUser).length > 0) {
       setDetail(chats.filter((i: any) => i.chatId === selectUser.id));
-      console.log("dasdsa", chats.filter((i: any) => i.chatId === selectUser.id))
       setPage(pageName[1])
       setSelectUser({})
     }
