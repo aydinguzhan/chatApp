@@ -10,7 +10,6 @@ export interface IChatProps {
     goBack: Function
 
 }
-
 export default function Chat({ chatDetail = [], adminCode = chatDetail[0].participants, goBack }: IChatProps) {
     const [text, setText] = useState<any>({ id: null, text: "", user: '', date: "" });
     const [displayTextArray, setDisplayTextArray] = useState<any>(chatDetail[0].messages ?? []);

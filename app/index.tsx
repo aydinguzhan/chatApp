@@ -22,16 +22,10 @@ export default function Index() {
   }, [selectUser])
   return (
     <View style={styles.container}>
-
       <StatusBar animated={true} barStyle={"default"} backgroundColor={COLOR_PALETTE.FIRST_PURPLE} />
-
       <Navbar page={page} goBack={() => setPage(pageName[0])} isConnect={null} />
-
       {page === pageName[0] && <Main setSelectUser={setSelectUser} />}
       {page === pageName[1] && <Chat adminCode={detail[0].participants[0]} chatDetail={detail} goBack={() => setPage(pageName[0])} />}
-
-
-
     </View>
   );
 }
